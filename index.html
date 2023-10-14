@@ -1,1 +1,164 @@
-<h1>Hello!</h1>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Randall Smith</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Personal_Web_Site.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+       <div>
+            <nav class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+                <h1>Randall Smith</h1>          
+                <h3>Software Engineer</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/RandallDSmith" target="_blank">
+                            <img src="~/Images/github-mark-white.png" alt="github" width="50" height="50" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/randall-smith-10bba041/" target="_blank">
+                            <img src="~/Images/—Pngtree—linkedin white icon_3570423.png" alt="linkedin" with="55" height="55" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:rdsmith1761@gmail.com">
+                            <img src="~/Images/6ak2vv6kr512hip8ndktntij5p.png" alt="email" width="50" height="50" />
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="row">
+            <div class="column">
+                <img class="profile-pic" src="~/Images/20230605_194703.jpg" />
+            </div>
+            <div class="column">
+                <h2>About Me</h2>
+                <p>
+                    Detail oriented military veteran who is organized and dependable. 
+                    Works at a fast pace to meet tight deadlines. Enthusiastic team player 
+                    ready to contribute to company prosperity. Successful at managing 
+                    multiple priorities with a positive attitude. Willingness to take on 
+                    added responsibilities to meet team goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+
+        <div class="education">
+            <h2>
+                <span>Education</span>
+            </h2>
+        </div>
+
+        <div>
+            <div class="column">
+                <h3>True Coders</h3>
+                <p>
+                    Full-Stack Software Engineering
+                    <span>*</span>
+                    <em>Sept 23</em>
+                </p>
+                <p>
+                    Intensive programming certificate that focused on practical skills. 
+                    Using fundamentals like debugging, exception handling, test driven 
+                    development and factory pattern to expand programming skills.
+                </p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>
+                <span>Skills</span>
+            </h2>
+            <h4>C#</h4>
+                <div class="skill-bars">
+                    <div class="skill-level" style="width: 60%;"></div>
+                </div>
+            <h4>ASP.Net MVC</h4>
+                <div class="skill-bars">
+                    <div class="skill-level" style="width: 60%"></div>
+                </div>
+            <h4>CSS</h4>
+                <div class="skill-bars">
+                    <div class="skill-level" style="width: 50%"></div>
+                </div>
+            <h4>HTML</h4>
+                <div class="skill-bars">
+                    <div class="skill-level" style="width: 50%"></div>
+                </div>
+            <h4>SQL</h4>
+                <div class="skill-bars">
+                    <div class="skill-level" style="width: 50%"></div>
+                </div>
+            <h4>Java Script</h4>
+                <div class="skill-bars">
+                    <div class="skill-level" style="width: 50%"></div>
+                </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <div class="projects">
+            <h2>
+                <span>Projects</span>
+            </h2>
+
+            <h4>Pokemon Price Guide</h4>
+
+            <h5>Web Application</h5>
+
+            <ul class="project-bullets">
+                <li>
+                    Website users enter a Pokemon Card name and number to display card price
+                </li>
+                <li>
+                    Website makes an API call and deserializes the JSon response
+                </li>
+                <li>
+                    Displays card name, variant, number, rarity, date price was posted, high price,
+                    low price, and market price
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+   
+   
+   @*  <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Personal_Web_Site - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer> *@
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
