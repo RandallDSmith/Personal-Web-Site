@@ -91,7 +91,7 @@ h2 {
     list-style: none;
     padding: 0;
     display: flex;
-    margin-left: 500px;
+    text-align: center;
 }
 
 .social-links li{
