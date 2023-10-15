@@ -30,15 +30,7 @@ header {
     margin: 0;
 }
 
-body {
-/*    background: url(https://wallpapercave.com/wp/8rXSoZo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    display: flex;
-    margin: 0;*/
-}
+
 
 footer{
     background-color: white;
@@ -95,6 +87,17 @@ h2 {
     color: darkblue;
 }
  
+.social-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 500px;
+}
+
+.social-links li{
+    margin-right: 10px;
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -103,7 +106,6 @@ ul{
 }
 
 li{
-   /* display: inline-block;*/
     margin-right: 10px;
 }
 
@@ -138,9 +140,6 @@ li{
     flex-direction: column;
     align-items: center;
     text-align: left;
-/*    padding-top: 90px;
-    text-align: left;
-    display: flex;*/
 }
 
 .education,
