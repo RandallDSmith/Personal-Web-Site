@@ -7,4 +7,8 @@
     <RootNamespace>Personal_Web_Site</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\docs\" />
+  </ItemGroup>
+
 </Project>
